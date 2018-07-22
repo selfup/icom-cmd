@@ -6,15 +6,6 @@
 
 ### Usage
 
-There will be premade cmds as powershell scripts.
-
-For example to change to FM you can run the `cmd-switch-to-fm.ps1` file.
-
-1. Change the `$serialPort` variable to your USB port in the `cmd-` file of your choosing: `$serialPort = ''`
-2. Double click the premade commands (once you set the port) or use the portable file to make your own!
-
-### Portable File for Communicating to Multple Ports/Radios
-
 There is a template file that you can just copy and paste anywhere (Desktop for example).
 
 This file is called: `template.ps1`
@@ -29,8 +20,8 @@ $cmdString = ""
 For example:
 
 ```ps1
-$serialPort = "COM1"
-$cmdString = "FA FA"
+$serialPort = "COM12"
+$cmdString = "FE FE 94 E0 26 00 05 00 01 FD"
 ```
 
 Rename the file as you see fit, as long as the `.ps1` extension remains.

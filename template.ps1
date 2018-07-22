@@ -1,5 +1,5 @@
-$serialPort = "COM12"
-$cmdString = "FE FE 94 E0 26 00 05 00 01 FD"
+$serialPort = ""
+$cmdString = ""
 
 $binChars = New-Object System.Collections.Generic.List[System.Object]
 $chars = $cmdString.Split(' ')
