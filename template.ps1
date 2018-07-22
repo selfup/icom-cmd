@@ -18,5 +18,6 @@ None,
 one
 
 $port.open()
+Start-Sleep -m 100
 $port.Write($binaries, 0, $binaries.Count)
 $port.Close()
