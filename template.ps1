@@ -9,7 +9,7 @@ foreach ($char in $chars) {
   $binChars.Add($converted)
 }
 
-$numbers = [system.String]::Join(' ', $binChars)
+$numbers = [system.String]::Join('', $binChars)
 
 $port = new-Object System.IO.Ports.SerialPort $serialPort, 9600, None, 8, one
 $port.open()
