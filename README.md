@@ -26,7 +26,7 @@ $cmdString = "FE FE 94 E0 26 00 05 00 01 FD"
 
 Rename the file as you see fit, as long as the `.ps1` extension remains.
 
-Double click (or right click and run powershell), and it will fire off your command (translate to binary) to the set port :tada:
+Right click and "Run with Powershell", and it will fire off your command to the set port :tada:
 
 ### Development
 
