@@ -2,7 +2,7 @@
 . ./lib/serial-write.ps1
 
 $serialPort = "COM1"
-$cmdString = "FE FE"
+$cmdString = "FE FE 94 E0 26 00 05 00 01 FD"
 
 $numbers = GetStringToBin $cmdString
 

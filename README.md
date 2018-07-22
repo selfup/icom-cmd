@@ -50,6 +50,8 @@ Please fork the project and make a Pull Request (PR) to contribute!
 
 ### Reading Materials
 
+`FE FE` begins a command - `FD` ends a command
+
 1. HEX to BIN table: http://vlsm-calc.net/decbinhex.php
 1. CI-V Reference Manual: http://www.icomamerica.com/en/support/kb/article.aspx?ArticleNumber=63AE624429
 1. ICOM IC-7610 Reference Manual: http://www.icomamerica.com/en/downloads/default.aspx?Category=661
