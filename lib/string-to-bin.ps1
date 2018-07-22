@@ -8,7 +8,7 @@ function GetStringToBin($cmd) {
     $binChars.Add($converted)
   }
 
-  $bin = [system.String]::Join(' ', $binChars)
+  $bin = [system.String]::Join('', $binChars)
 
   return $bin
 }
