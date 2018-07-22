@@ -3,7 +3,7 @@ function WriteToSerialPort($serialPort, $numbers) {
 
   $port.open()
 
-  $port.Write($numbers)
+  $port.Write($numbers, 0, $numbers.Count)
 
   $port.Close()
 }

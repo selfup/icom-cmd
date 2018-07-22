@@ -1,17 +1,17 @@
-$serialPort = ""
-$cmdString = ""
+$serialPort = "COM12"
+$cmdString = "FE FE 94 E0 26 00 05 00 01 FD"
 
 $binChars = New-Object System.Collections.Generic.List[System.Object]
 $chars = $cmdString.Split(' ')
 
 foreach ($char in $chars) {
-  $converted = [convert]::ToString("0x$char", 2)
+  [Byte] $converted = [int]"0x$char"
   $binChars.Add($converted)
 }
 
-$numbers = [system.String]::Join('', $binChars)
+[Byte[]] $numbers = $binChars
 
 $port = new-Object System.IO.Ports.SerialPort $serialPort, 9600, None, 8, one
 $port.open()
-$port.Write($numbers)
+$port.Write($numbers, 0, $numbers.Count)
 $port.Close()
