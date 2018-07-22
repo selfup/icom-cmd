@@ -12,10 +12,10 @@ foreach ($hex in $hexes) {
 [Byte[]] $binaries = $bins
 
 $port = new-Object System.IO.Ports.SerialPort $serialPort,
-  9600,
-  None,
-  8,
-  one
+9600,
+None,
+8,
+one
 
 $port.open()
 $port.Write($binaries, 0, $binaries.Count)
