@@ -46,4 +46,5 @@ Please fork the project and make a Pull Request (PR) to contribute!
 1. HEX to BIN table: http://vlsm-calc.net/decbinhex.php
 1. CI-V Reference Manual: http://www.icomamerica.com/en/support/kb/article.aspx?ArticleNumber=63AE624429
 1. ICOM IC-7610 Reference Manual: http://www.icomamerica.com/en/downloads/default.aspx?Category=661
+1. Old CT-17 Reference Manual with BASIC code blocks: http://www.icom.co.jp/world/support/download/manual/pdf/CT-17.pdf
 1. Decimal Array to Binary `$port.Write/3`: https://social.technet.microsoft.com/Forums/office/en-US/c0cad62d-5e6d-47de-97a6-406f50025d7f/sendingreading-hex-data-to-a-serial-port-in-powershell?forum=winserverpowershell
