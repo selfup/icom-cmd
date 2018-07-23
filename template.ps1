@@ -1,4 +1,4 @@
-$serialPort = "COM12"
+$serialPort = "COM4"
 $cmdString = "FE FE 94 E0 26 00 05 00 01 FD"
 
 $bins = New-Object System.Collections.Generic.List[System.Object]
@@ -18,6 +18,13 @@ None,
 one
 
 $port.open()
+
+# must sleep for 100ms to let radio be ready to process
 Start-Sleep -m 100
+
 $port.Write($binaries, 0, $binaries.Count)
+
+# must sleep for 100ms to let the radio process the byte array
+Start-Sleep -m 100
+
 $port.Close()
