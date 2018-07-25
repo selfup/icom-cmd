@@ -45,7 +45,7 @@ Please fork the project and make a Pull Request (PR) to contribute!
 
 ### Reading Materials
 
-`FE FE` begins a command - `FD` ends a command
+![basic-message-format-icom](https://user-images.githubusercontent.com/9837366/43176722-9fef0936-8f8a-11e8-8ab1-22e65ffe0977.PNG)
 
 1. [HEX to BIN table](http://vlsm-calc.net/decbinhex.php)
 1. [CI-V Reference Manual](http://www.icomamerica.com/en/support/kb/article.aspx?ArticleNumber=63AE624429)
