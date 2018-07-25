@@ -12,7 +12,7 @@ Example of the script sending numbers over a serialport :tada:
 
 There is a template file that you can just copy and paste anywhere (Desktop for example).
 
-This file is called: `template.ps1`
+This file is called: `icom-cmd-template.ps1`
 
 It has all the needed functions to run. You just have to set these variables:
 
@@ -31,6 +31,18 @@ $cmdString = "FE FE 94 E0 26 00 05 00 01 FD"
 Rename the file as you see fit, as long as the `.ps1` extension remains.
 
 Right click and "Run with Powershell", and it will fire off your command to the set port :tada:
+
+### CLI
+
+You can send two arguments as command line arguments to a script in the terminal like so:
+
+```ps1
+.\icom-cmd-cli.ps1 "COM3" "FE FE 94 E0 26 00 05 00 01 FD"
+```
+
+The first argument is the serial port, and the second argument is the HEX command block in a single string with spaces :rocket:
+
+Both of the arguments are required!
 
 ### Development
 
