@@ -1,5 +1,9 @@
 # ICOM Powershell Serialport Command Sender
 
+Example of the script sending numbers over a serialport :tada:
+
+![icom-cmd-example-script-env](https://user-images.githubusercontent.com/9837366/43174596-96fb9452-8f80-11e8-8371-174b7ad339cb.PNG)
+
 ### Known compatible targets
 
 * ICOM IC-7610
