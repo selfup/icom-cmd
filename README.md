@@ -34,7 +34,7 @@ Right click and "Run with Powershell", and it will fire off your command to the 
 
 ### Development
 
-1. [RealtTerm](https://sourceforge.net/projects/realterm/)
+1. [RealTerm](https://sourceforge.net/projects/realterm/)
 1. [com0com](https://sourceforge.net/projects/com0com/)
 
 Please read the `CODE_OF_CONDUCT.md` file :pray:
