@@ -51,6 +51,8 @@ Port Closed
 
 You can write a powershell script that just calls this one!
 
+The `icmdchain.ps1` has the template :smile:
+
 ```powershell
 # no response
 .\icmd.ps1  -timeout 1000 COM4 'FE FE 94 E0 26 00 05 00 01 FD'
