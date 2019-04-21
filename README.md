@@ -4,35 +4,65 @@ Example of the script sending numbers over a serialport :tada:
 
 ![icom-cmd-example-script-env](https://user-images.githubusercontent.com/9837366/43174596-96fb9452-8f80-11e8-8371-174b7ad339cb.PNG)
 
-### Known compatible targets
+## Known compatible targets
 
-* ICOM IC-7610
+-   ICOM IC-7610
 
-### Usage
+## Usage
 
-There is a template file that you can just copy and paste anywhere (Desktop for example).
+#### Clicking 'Run with Powershell' in the File Explorer
 
-This file is called: `template.ps1`
+You will get a prompt for the mandatory arguments.
 
-It has all the needed functions to run. You just have to set these variables:
+Once filled in, the script will run.
 
-```ps1
-$comPort = ""
-$cmdString = ""
+Since the shell dissapears running it this way, don't expect to catch the response from the serial device!
+
+![](https://user-images.githubusercontent.com/9837366/56464532-9152e180-63b1-11e9-91b7-8225660cf853.png)
+
+#### Default ReadLine with just two arguments:
+
+```powershell
+.\icmd.ps1 COM4 'FE FE 94 E0 26 00 05 00 01 FD'
+Waiting for device to respond...
+---
+FEFEFD
+---
+Port Closed
 ```
 
-For example:
+#### Force a timeout instead of reading response:
 
-```ps1
-$serialPort = "COM12"
-$cmdString = "FE FE 94 E0 26 00 05 00 01 FD"
+```powershell
+.\icmd.ps1 COM4 'FE FE 94 E0 26 00 05 00 01 FD' -timeout 1000
+Forcing a timeout!
+Port Closed
 ```
 
-Rename the file as you see fit, as long as the `.ps1` extension remains.
+_OR_
 
-Right click and "Run with Powershell", and it will fire off your command to the set port :tada:
+```powershell
+.\icmd.ps1  -timeout 1000 COM4 'FE FE 94 E0 26 00 05 00 01 FD'
+Forcing a timeout!
+Port Closed
+```
 
-### Development
+#### Chaining calls
+
+You can write a powershell script that just calls this one!
+
+```powershell
+# no response
+.\icmd.ps1  -timeout 1000 COM4 'FE FE 94 E0 26 00 05 00 01 FD'
+# read response
+.\icmd.ps1 COM4 'FE FE 94 E0 26 00 05 00 01 FD'
+# no response
+.\icmd.ps1  -timeout 1000 COM4 'FE FE 94 E0 26 00 05 00 01 FD'
+# read response
+.\icmd.ps1 COM4 'FE FE 94 E0 26 00 05 00 01 FD'
+```
+
+## Development
 
 1. [RealTerm](https://sourceforge.net/projects/realterm/)
 1. [com0com](https://sourceforge.net/projects/com0com/)
@@ -46,7 +76,7 @@ I use [VSCode](https://code.visualstudio.com/) with two extensions for this proj
 
 Please fork the project and make a Pull Request (PR) to contribute!
 
-### Reading Materials
+## Reading Materials
 
 1. [HEX to BIN table](http://vlsm-calc.net/decbinhex.php)
 1. [CI-V Reference Manual](http://www.icomamerica.com/en/support/kb/article.aspx?ArticleNumber=63AE624429)
