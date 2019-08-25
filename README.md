@@ -1,12 +1,15 @@
 # ICOM Powershell Serialport Command Sender
 
+Was built for ICOM radio but can be used for anything that accepts Hex Codes over Serial Port :pray:
+
 Example of the script sending numbers over a serialport :tada:
 
-![icom-cmd-example-script-env](https://user-images.githubusercontent.com/9837366/43174596-96fb9452-8f80-11e8-8371-174b7ad339cb.PNG)
+![icom-cmd-example-script-env](https://user-images.githubusercontent.com/9837366/63654012-3a339380-c73a-11e9-8609-708ab608ad13.png)
 
 ## Known compatible targets
 
 -   ICOM IC-7610
+-   Anything over Serial Port (Arduino/etc...)
 
 ## Usage
 
