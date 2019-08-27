@@ -1,6 +1,6 @@
 # ICOM Powershell Serialport Command Sender
 
-Was built for ICOM radio but can be used for anything that accepts Hex Codes over Serial Port :pray:
+Was built for ICOM radio but can be used for anything that accepts Hex Codes/Binary over Serial Port :pray:
 
 Example of the script sending numbers over a serialport :tada:
 
